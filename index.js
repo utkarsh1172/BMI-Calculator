@@ -6,8 +6,8 @@
     height = height * 12;
     height = height * 0.025; //now hieght in meter
    
-    var newbmiValue = weight / (height * height);
+    var newbmivalue = weight / (height * height);
     
-    document.getElementById('result').value = newbmiValue;
+    document.getElementById('result').value = newbmivalue;
 
 } 
