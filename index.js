@@ -1,8 +1,13 @@
-let btn = document.getElementById("btn");
+ function demo(){
+   
+    var weight = document.getElementById('weight').value;
+    var height = document.getElementById('height').value;
 
-function demo(){
-    let hei = document.getElementById("height").value;
-    let wei = document.getElementById("weight").value;
-    let res = document.getElementById("result");
-    res.value =wei/ Math.pow(hei,2);
-}
+    height = height * 12;
+    height = height * 0.025; //now hieght in meter
+   
+    var newbmiValue = weight / (height * height);
+    
+    document.getElementById('result').value = newbmiValue;
+
+} 
